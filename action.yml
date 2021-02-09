@@ -7,3 +7,6 @@ runs:
         shell: "bash"
       - run: "yarn global add pxt"
         shell: "bash"
+      - shell: "bash"
+        run: |
+          echo "$(yarn bin)" >> $GITHUB_PATH
