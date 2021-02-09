@@ -5,8 +5,5 @@ runs:
     steps:
       - run: "sudo apt-get install -y --quiet xvfb libudev-dev"
         shell: "bash"
-      - run: "yarn global add pxt"
+      - run: "sudo yarn global add pxt"
         shell: "bash"
-      - shell: "bash"
-        run: |
-          echo "$(yarn bin)" >> $GITHUB_PATH
