@@ -1,0 +1,9 @@
+name: "Install PXT"
+description: "Install PXT"
+runs:
+    using: "composite"
+    steps:
+      - run: "sudo apt-get install -y -qq xvfb > /dev/null"
+        shell: "bash"
+      - run: "yarn global add pxt"
+        shell: "bash"
