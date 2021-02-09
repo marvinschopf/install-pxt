@@ -3,7 +3,7 @@ description: "Install PXT"
 runs:
     using: "composite"
     steps:
-      - run: "sudo apt-get install -y -qq xvfb > /dev/null"
+      - run: "sudo apt-get install -y --quiet xvfb libudev-dev"
         shell: "bash"
       - run: "yarn global add pxt"
         shell: "bash"
